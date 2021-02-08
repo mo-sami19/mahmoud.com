@@ -1,0 +1,83 @@
+body
+{
+margin: 0;
+padding: 0;
+color: black;
+background-color: #e7ebf3;
+}
+.tri {
+    width: 0;
+    height: 0;
+    border-top-width: 20px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-right-width: 20px;
+    border-right-style: solid;
+    border-right-color: red;
+}
+.theme-main-menu .logo a img {
+    height: 43px;
+    margin-left: 37px;
+    margin-top: 9px;
+  }
+  .nav-item {
+ padding-bottom: 8px; 
+ }
+ .inner-container .container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+  }
+  .inner-container .container span{
+    text-transform: uppercase;
+    display: block;
+  }
+  .inner-container .text1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 3s 1;
+  }
+  .inner-container .text2{
+    font-size: 30px;
+    color: #6ab04c;
+  }
+  
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+  }
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .hexagon {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);;
+     
+  }
